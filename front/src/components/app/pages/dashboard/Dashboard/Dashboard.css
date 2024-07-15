@@ -1,0 +1,272 @@
+ 
+
+.card-stat{
+    width:200px;
+    height:200px;   
+    background-color: #eeeeee;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+    text-align: center;
+    margin-left:10%;
+    margin-bottom:50px;
+    transition: transform 0.3s;
+}
+
+.card-stat:hover {
+  transform: translate(0, -10px);
+  background-color: #2d4059;
+}
+
+.card-stat h4{
+    color: #ff5722;
+    margin-top:30px;
+}
+/* .toogle_bar.active .dash{
+    width: 100%;
+} */
+
+.active .pro-sidebar{
+    width: 270px;
+}
+.pro-sidebar{
+    width: 80px;
+}
+
+.active .dash {
+    margin-left: auto;
+    min-height: calc(100vh - 103px);
+    /* padding-top: 150px; */
+    width: calc(100% - 270px); 
+    margin-top: 101px;
+    padding: 50px 40px;
+}
+.dash {
+    margin-left: auto; 
+    width: calc(100% - 80px); 
+}
+.card-stat p{
+    color: #ff5722;
+    font-size:20px;
+    font-weight: 700;
+}
+
+.card-stat img{
+    height:50px;
+    width:50px;
+    margin-top:20px;
+}
+
+.stats{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    margin-top:10px;
+    margin-left:10%;
+}
+
+@media (max-width:490px){
+    .card-stat{
+        width:150px;
+        height:150px;
+        margin-left:7%;
+    }
+    .card-stat h4{
+        font-size:20px;
+        margin-top:15px;
+    }
+    
+    .card-stat p{
+        font-size:16px;
+    }
+    
+    .card-stat img{
+        height:40px;
+        width:40px;
+        margin-top:10px;
+    }
+  }
+
+  @media (max-width:390px){
+    .card-stat{
+        margin-left:5%;
+    }
+}
+
+/* new */
+.calander {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.card-stats.radius.card {
+    border-radius: 18px;
+}
+.icon_wrap {
+    height: 60px;
+    width: 60px;
+    background-color: #004aad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    margin-right: auto;
+}
+.icon_wrap svg{
+    font-size: 25px;
+}
+.numbers {
+    text-align: center;
+}
+h4.card-title {
+    color: #ff5722;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.range-number span{
+    font-weight: bold;
+}
+path {
+    fill: white;
+}
+
+.jAaeFT { 
+    padding: 13px;
+}
+img.menuIcon {
+    max-width: 25px;
+}
+.my_side_bar{
+    background: url('../../../../../assets/images/departments.jpg');
+}
+.card-stats.radius.card {
+    border-radius: 10px; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid #004aad;
+}
+
+.Therapists_Wrap .therapist-table-container {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+    padding: 36px;
+    margin: 0 auto;
+    border: none;
+}
+.filter_wrapper  {
+    display: flex;  
+}
+
+.filter_wrap {
+    padding: 0;
+    background: 0;
+    border: none;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+.customInput {
+    min-height: 55px;
+    font-size: 19px;
+    outline: none;
+}
+
+.schedule_wrap h2.main-title {
+    color: #004aad;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+ 
+.card_listing .card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+    margin-bottom: 25px;
+} 
+.card_listing .list-group-item {
+    border-top-width: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #004aad;
+    padding: 10px 25px;
+}
+.card_listing .badge-primary { 
+    background-color: #ff5722;
+    font-size: 13px !important;
+}
+.card_listing .list-group-item .therapists_btn 
+{
+    margin: 20px 0 20px;
+}
+.card_listing .list-group-item .therapists_btn button{
+    border-radius: 50px; 
+} 
+.card_listing .card  .card-img-top {
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.card_listing .card h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #004aad;
+    font-size: 25px;
+}.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+} 
+.my_side_bar a:hover .gmeTLe{
+    background: #ff5722;
+}.card_listing .card .card-img-top {
+    object-fit: contain;
+}
+.previous_clr{
+    background: green;
+    color: white;
+    padding:5px 10px;
+    border-radius: 20px;
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.up_coming{
+    background: orange;
+    color: white;
+    padding:5px 10px;
+    border-radius: 20px; 
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.canceled{
+    background-color: red;
+    color: white;
+    padding:5px 10px;
+    border-radius: 20px; 
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:1367px){
+    .wrap_info p{
+        font-size: 12px;
+    }
+    .icon_wrap {
+        height: 48px;
+        width: 48px;
+    }
+    .active .dash {
+        padding: 25px 40px;
+    }
+  
+}
+

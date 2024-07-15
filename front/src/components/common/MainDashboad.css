@@ -1,0 +1,278 @@
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .navbar {
+    z-index:1111;
+  }
+  
+  .logo-img img {
+    height: 100%;
+    width: 100%;
+    max-width: 250px;
+}
+  
+  .social-logo{
+    margin:0px;
+    margin-top:8px;
+    margin-right:20px;
+    padding: 0px;
+  }
+  
+  .social{
+    position:absolute;
+    right:0px;
+  }
+  
+  .mynav{
+    background: white;
+    font-size: 18px;
+  }
+  
+  .nav-text a {
+    text-decoration: none;
+    margin-right: 0px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #EE0000;
+    padding: 5px 0;
+  }
+  .nav-text a:hover {
+    background: #d7e6fa;
+}
+
+.nav-text a img{
+  max-width: 20px;
+  margin-right: 5px;
+}
+  
+.dropdown-menu {
+  text-align: center !important;
+  font-weight: 600;
+  border: 1px solid #ff5722;
+}
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #ff5722 !important;
+  }
+  
+  .nav-text a:hover{
+    color: #ff5722;
+  }
+  
+  .nav-droptext{
+    text-decoration: none;
+    color:#069191;
+  }
+  
+  #basic-nav-dropdown{
+    background-color: white;
+  }
+  
+  .navbar-toggler {
+    background-color: #7c8592 !important;
+  }
+  .pro-sidebar.toggled .dash{
+    margin-left: 4%;
+  }
+  
+  .login-logo-img img{
+    height:100px;
+    width:180px;
+    margin-left:210px;
+  }
+  
+  .login-card-img{
+    height:640px;
+  }
+  
+  /* .my_side_bar{
+    background: white; 
+  } */
+  span.item-content {
+    color: black;
+}
+  #font-txt{
+    color: black;
+    text-decoration: none;
+    font-size:22px;
+  }
+ 
+  
+  .my_side_bar a{
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-size:19px;
+    margin:0px;
+  }
+  .gaTCvF {
+    height: 100% !important;
+    position:fixed !important;
+    top: 95px;
+  }
+  .over-x-hiden{
+    overflow: auto;
+    max-height: 650px;
+  }
+  
+  @media (max-width:830px){
+    .social-logo{
+      width:30px;
+    }
+    
+    .social{
+      width:200px;
+    }
+    .footer p{
+      font-size:14px;
+    }
+  }
+  .navbar {
+    position: fixed !important;
+    display: inline-flex !important;
+    width: 100% !important;
+  }
+  
+  @media (max-width:740px){
+    .social-logo{
+      margin-right:0px;
+    }
+    
+    .social{
+      width:150px;
+    }
+    .footer p{
+      font-size:12px;
+      margin-left:10px;
+    }
+  }
+  @media (max-width:420px){
+    .footer p{
+      font-size:10px;
+      margin-left:5px;
+    }
+  }
+  
+  
+  #collasible-nav-dropdown{
+    color: white;
+  }
+
+
+  /* new */
+
+  .nav_dropdown_design:hover {
+    color: #ff5722;
+  }
+  .navbar {
+  border-bottom: 4px solid #ff5722;
+  }
+  .dropdown-menu.show {
+    padding: 0;
+    background: white !important;
+  }
+  .dropdown-toggle::after{
+    border: none;
+    background: url(../../assets/images/user-profile.png);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+  #basic-nav-dropdown{
+    padding: 0;
+    height: 32px;
+  }
+  .hQSxZz {
+    margin: 0px 4px 10px !important;
+  }
+   
+  span.item-content {
+    color: #004aad;
+    font-weight: 600;
+}
+.pro-sidebar .jGeaPm .head-div {
+  display: none;
+}
+.gmeTLe,
+.gmeTLe .item-content{
+  color: white;
+  font-size: 17px;
+}
+.fRhOkl { 
+  padding-top: 38px !important;
+}
+.gmeTLe { 
+  height: 51px;
+  cursor: pointer;
+  outline: none;
+  /* background: #ff5722; */
+  border-radius: 9px;
+}
+.gmeTLe .side-icon { 
+  width: 28px;
+  font-size: 21px;
+}
+.dropdown-menu[data-bs-popper] { 
+  left: -126px;
+}
+
+
+a.active .gmeTLe {
+  background: #ff5722;
+}
+
+.main-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #004aad;
+  text-transform: capitalize;
+}
+
+.main-title span{
+  color: #ff5722;
+}
+
+
+.custom_table .table td, .custom_table .table th {
+  padding: 12px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.custom_table table{
+  table-layout: fixed;
+}
+.therapists_btn button {
+  background-color: #004aad;
+}
+.therapists_btn button:hover {
+  background-color: #ff5722;
+}
+.custom_table {
+  margin-top: 50px;
+}
+.dash_active{
+  background-color: #ff5722;
+  border-radius: 9px;
+}
+
+@media (max-width:1467px){
+  .custom_table .table td, .custom_table .table th {
+    padding: 12px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.main-title {
+  font-size: 32px;
+}
+.gmeTLe, .gmeTLe .item-content {
+  font-size: 14px;
+}
+}

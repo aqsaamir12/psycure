@@ -1,0 +1,102 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require("../app");
+var http = require("http");
+var configOptions = {};
+
+// Load environment variables
+require("dotenv").config(configOptions);
+
+// Import port configuration
+const { port } = require("../src/config/vars");
+
+// Normalize the port
+var normalizedPort = normalizePort(port || "3000");
+app.set("port", normalizedPort);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+
+// Set server timeout to 5 minutes
+server.timeout = 300000;
+
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+server.listen(normalizedPort);
+server.on("error", onError);
+server.on("listening", onListening);
+
+
+
+/**
+ * Event listener for HTTP server "timeout" event.
+ */
+// server.on("timeout", () => {
+//   console.log("Server request timeout");
+// });
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var normalizedPort = parseInt(val, 10);
+
+  if (isNaN(normalizedPort)) {
+    // named pipe
+    return val;
+  }
+
+  if (normalizedPort >= 0) {
+    // port number
+    return normalizedPort;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== "listen") {
+    throw error;
+  }
+
+  var bind =
+    typeof normalizedPort === "string"
+      ? "Pipe " + normalizedPort
+      : "Port " + normalizedPort;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
+      process.exit(1);
+      break;
+    case "EADDRINUSE":
+      console.error(bind + " is already in use");
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === "string" ? "pipe " + addr : "Port " + addr.port;
+}

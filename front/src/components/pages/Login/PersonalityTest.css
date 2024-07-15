@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+.opt_wraper{
+	margin-bottom: -110px;
+}
+
+.sign-form h5 {
+    color: #ff5722;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.option-container label {
+    margin-left: 10px;
+    padding: 3px 0px; /* Reduced padding for compactness */
+    cursor: pointer;
+}
+
+
+
+.sign-form{
+    background-color: #283290;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto;
+}
+
+.arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+    margin-right: 10px;
+}
+
+.left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	margin-left:20px;
+}
+
+
+.sign-form .sign-body button {
+	border-radius: 20px;
+	border: 1px solid #222831;
+	background-color: #222831;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	margin-top: 35px;
+}
+
+.sign-form  button:hover{
+	background-color:#ff5722;
+	border-color: #ff5722;
+}
+
+.sign-form button:active {
+	transform: scale(0.95);
+}
+.personality_test_wraper form {
+	align-items: self-start;
+}
+.sign-form form {
+	background-color: #FFFFFF;
+	display: flex; 
+	/* Align items to the start (left) */
+	justify-content: center;
+	flex-direction: column;
+	padding: 0px 25px;
+  }
+
+.sign-body {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 600px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+    padding-top:20px;
+	padding-bottom: 20px;
+}
+
+.startTestPage {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	height:80vh;
+	flex-direction: column;
+	text-align: center;
+  }
+    
+#startTestPageButton{
+	margin-top: 80px;
+}
+
+#startTestPageHeading{
+	margin-top: -80px;
+	margin-bottom: 10px;
+}
+
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+
+@media(max-width:630px){
+	.sign-body {
+		width: 420px;
+	}
+}
+@media(max-width:440px){
+	.sign-body {
+		width: 320px;
+	}
+}
+
+
+.personality_test_wraper .button-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%; /* Adjusted width to account for the padding on both sides */
+	align-items: center;
+  }
+  
+  .prev-button,
+  .next-button,
+  .submit-button {
+	border-radius: 20px;
+	border: 1px solid #222831;
+	background-color: #222831;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+  }
+  
+  
+  .prev-button:active,
+  .next-button:active,
+  .submit-button:active {
+	transform: scale(0.95);
+  }
+  
+  .option-container {
+	align-items: center;
+	text-align: left; /* Align options to the left */
+  }
+  
+  .option-container input {
+	padding: 10px 15px;
+	width: auto;
+}
+  
+.error-message{
+	color:red;
+}
+.personality_test_wraper .sign-body {
+
+    width: 720px;
+}

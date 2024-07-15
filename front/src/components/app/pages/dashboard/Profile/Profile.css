@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+
+
+.profile-form h1, h2{
+	color:#ff5722;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+}
+
+
+.profile-form p {
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 0px;
+    text-align: left;
+}
+
+ 
+
+.profile-form a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.profile-form button {
+	border-radius: 20px; 
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	margin-top:20px;
+	border-color: #004aad;
+}
+
+.profile-form button:active {
+	transform: scale(0.95);
+}
+.profile-form button:hover {
+	background-color: #ff5722;
+	border-color:#ff5722;
+}
+.profile-form button:focus {
+	outline: none;
+}
+
+.profile-form button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+.profile-form form {
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0px;
+	height: 100%;
+}
+
+.profile-form form p {
+	align-items: left;
+}
+
+.profile-form input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	border: 1px solid #004aad;
+}
+.profile-form select{
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	border: 1px solid #004aad;
+} 
+.sign-body {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	overflow: hidden;
+	width: 620px;
+	max-width: 100%;
+	min-height: 480px;
+    padding-top:20px;
+}
+.profile-form .card {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 36px;
+    margin: 0 auto;
+    border: none;
+}
+.form-label{
+	font-weight: 500 !important; 
+	margin-bottom: 0   !important;
+}
+
+.profile-form .card-body { 
+    padding: 0;
+}
+ 
+.profile-pic {
+	color: transparent;
+	transition: all 0.3s ease;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	position: relative;
+	transition: all 0.3s ease;
+	max-width: 300px;
+	  }
+  .profile-pic input {
+	display: none;
+  }
+  .profile-pic .prfl_wrap {
+	position: absolute;
+	object-fit: cover;
+	width: 165px;
+	height: 165px;
+	box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+	border-radius: 100px;
+	z-index: 0;
+  }
+  .profile-pic .-label {
+    cursor: pointer;
+    height: 165px;
+    width: 165px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 9;
+  }
+  .profile-pic:hover .-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 10000;
+	color: #fafafa;
+	transition: background-color 0.2s ease-in-out;
+	border-radius: 100px;
+  }
+  .profile-pic span {
+	display: inline-flex;
+	padding: 0.2em;
+	height: 2em;
+  }
+  .profile_badge{
+	font-weight: 700;
+	color: white;
+	background-color: #004aad;
+	padding: 10px 10px;
+	border-radius: 20px;
+	height: 43px;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	font-size: 13px;
+  }
+  .progress_bar {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.profile_badge svg{
+	width: 20px;
+    flex: 0 0 20px;
+    max-width: 20px;
+    margin-right: 10px;
+}
+.barCompletedred{
+	background-color: red;
+	margin-bottom: 20px;
+	width: 11%;
+}
+.barCompletedgreen{
+	background-color: green;
+}
+.barCompletedorange{
+	background-color: orange;
+}
+.barCompletedyellow{
+	background-color: yellow;
+}
+.barCompletedgre{
+	background-color: #004aad;
+}
+.progress_wrapper {
+    margin-bottom: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.wrapper {
+	border: 3px solid blue;
+  }
+  
+  .container_raper {
+    background-color: #29328d;
+}
+
+  .barCompleted {
+    background-color: #ff5722;
+    width: 11%;
+}
+ .progress_wrapper .label {
+	font-size: 20px;
+	color: white;
+  }
+  .progress_wrapper label  {
+    color: #29328d;
+    font-size: 20px;
+    font-weight: 700;
+}
+.top-5{
+	top: -5px;
+}

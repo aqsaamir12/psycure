@@ -1,0 +1,97 @@
+.reviews_content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+.reviews_wraper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.reviews_wraper h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #ff5722;
+}
+ 
+.reviews_wraper .rating {
+    font-size: 20px;
+    margin: 10px 0;
+}
+ 
+.reviews_wraper .stars {
+    font-size: 30px;
+    margin: 10px 0;
+}
+ 
+.reviews_wraper .star {
+    cursor: pointer;
+    margin: 0 5px;
+}
+ 
+.reviews_wraper .active[data-value='1'] {
+    color: rgb(255, 0, 0);
+}
+ 
+.reviews_wraper .active[data-value='2'] {
+    color: rgb(255, 106, 0);
+}
+
+.reviews_wraper .active[data-value='3']{
+    color: rgb(251, 255, 120);
+}
+ 
+.reviews_wraper .active[data-value='4'] {
+    color: rgb(255, 255, 0);
+}
+ 
+.reviews_wraper .active[data-value='5']{
+    color: rgb(24, 159, 14);
+}
+ 
+.reviews_wraper textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ 
+
+ 
+.reviews_wraper button:hover {
+    background-color: #0056b3;
+}
+ 
+.reviews_wraper .reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+ 
+.reviews_wraper .review {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+ 
+.reviews_wraper .review p {
+    margin: 0;
+    text-align: left;
+}
+.text_green{
+    color: #004aad;
+}
+.flex-direct-column{
+    flex-direction: column;
+}
+.therapists_btn  [disabled]{
+    background-color: grey !important;
+    cursor: not-allowed;
+}

@@ -1,0 +1,138 @@
+/* Styles for the therapist table container */
+
+.therapist-table-container h1{
+  color: #004aad;
+  font-weight: 600;
+}
+.therapist-page-container {
+  width: 100%;
+  /* max-width: 1600px; */
+  margin: 0 auto;
+}
+.therapist-table-container {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 21px;
+  margin-left: 0;
+  margin-right: 5%;
+  width: 100%;
+}
+/* .therapist-cards-container { */
+  /* margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-top: 3%;
+  margin-bottom: 10%;
+  margin-left: 12.5%;
+  margin-right: 5%
+} */
+
+
+h1 {
+  text-transform: uppercase;
+  color: #ff5722;
+  font-weight: 700;
+}
+
+/* Styles for the input and select elements */
+.therapist-table-container input,
+.therapist-table-container select {
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  border: 1px solid #004aad;
+  border-radius: 4px;
+}
+
+/* Specific styles for the name search input */
+.therapist-table-container input[type="text"] {
+  width:100%; /* Full width minus padding and border */
+  margin-right: 0;
+}
+
+/* Specific styles for the dropdowns */
+.therapist-table-container select {
+  width: 100%; /* Fixed width for dropdowns */
+}
+
+/* Styles for the range slider */
+.therapist-table-container input[type="range"] {
+  width: 100%; /* Full width of the container */
+  -webkit-appearance: none; /* Override default appearance */
+  appearance: none;
+  height: 15px;
+  background: #b1d1ff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 15px;
+}
+
+/* Style for the range slider thumb */
+.therapist-table-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #ff5722;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.therapist-table-container input[type="range"]::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #ff5722;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Styling for the therapist cards container */
+.therapist-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* Styling for individual therapist cards (assuming some basic styling) */
+.therapist-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* Fixed width for each card */
+  text-align: center;
+}
+p.range-number span {
+  color: #ff5722;
+}
+.filter_wrapper{
+  margin-left: auto;
+  justify-content: end;
+}
+.filter_btn button {
+  height: 50px;
+  width: 145px;
+  background: #004aad;
+  font-size: 18px;
+  margin-left: 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-out;
+}
+.filter_btn button:hover {
+  background: #fff;
+  color: #004aad;
+  border: 1px solid #004aad;
+}
+.filter_btn:last-child button {
+  background: #ff5722;
+  transition: all 0.3s ease-out;
+}
+.filter_btn:last-child button:hover {
+  color: #ff5722;
+  border: 1px solid #ff5722;
+  background: #fff;
+}

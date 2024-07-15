@@ -1,0 +1,177 @@
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: #2d4059!important;
+}
+
+.btn-info {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #ff5722;
+    --bs-btn-border-color: #ff5722;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #ff5722;
+    --bs-btn-hover-border-color: #ff5722;
+    --bs-btn-focus-shadow-rgb: 11,172,204;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #ff5722;
+    --bs-btn-active-border-color: #ff5722;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #ff5722;
+    --bs-btn-disabled-border-color: #ff5722;
+}
+
+.red-error{
+	line-height: 4px;
+	color:rgb(255, 60, 0);
+	margin:0px;
+	font-size: 12px;
+	padding: 0px;
+    text-align: left;
+}
+
+.check_out_history .order-btn{
+    border-radius: 20px;
+	border: 1px solid #0e141b;
+	background-color: #0e141b;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.check_out_history .order-btn:hover{
+	background-color:#ff5722;
+	border-color: #ff5722;
+}
+.check_out_history .contact-wrap .text-danger{
+    color: #ffc517 !important;
+}
+.check_out_history .contact-wrap .error{
+    color: #ffc517 !important;
+
+}
+.check_out_history .contact-wrap textarea::placeholder{
+    color: white !important;
+}
+
+.check_out_history .disabled-option {
+    color: #999; /* Change the color to your desired disabled color */
+    background-color: #f8f8f8; /* Change the background color to your desired disabled background color */
+    cursor: not-allowed; /* Optional: Change the cursor to indicate that it's not selectable */
+}
+
+.check_out_history {
+  width: 30vw;
+  min-width: 500px;
+  align-self: center;
+  box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+    0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 40px;
+}
+
+
+.check_out_history #payment-message {
+  color: rgb(105, 115, 134);
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.check_out_history #payment-element {
+  margin-bottom: 24px;
+}
+
+/* Buttons and links */
+.check_out_history button {
+  background: #5469d4 !important;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+.check_out_history button:hover {
+  filter: contrast(115%) !important;
+}
+
+.check_out_history button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+/* Appointment.css */
+
+.check_out_history .spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.check_out_history .spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.check_out_history .spinner:before,
+.spinner:after {
+  position: absolute;
+  content: '';
+}
+
+.check_out_history .spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.check_out_history .spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
